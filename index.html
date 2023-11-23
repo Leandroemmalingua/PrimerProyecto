@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>El Rey Del Pollo</title>
+    </head>
+    <body>
+                <!--
+            1# HEADER / NAV = LA PRIMERA ETIQUETA PARA LA ESTRUCTURA DE LA NAVEGACIÓN
+            2# MAIN = TODO EL CONTENIDO (SECTIONS-ARTICLES-DIV-ASIDES)
+            3# FOOTER = TODO EL PIÉ DE PÁGINA (DERECHOS DE AUTOR-REDES-ACCESOS)
+
+            ID= LO UTILIZAMOS PARA LAS ETIQUETAS CON MAYOR PESO, YA SEAN ESTRUCUTRAS O SECCIONES:
+                        HEADER/NAV
+                        MAIN/SECTIONS
+                        FOOTER
+
+            CLASS= LAS UTILIZAMOS PARA AQUELLOS ARTICULOS CON MENOR PESO.
+
+            MAIN=
+                sections
+                        articles
+                                asides
+                                        divs
+
+            A TODA SECCIÓN NUEVA CREAMOS UN ID PARA IDENTIFICARLAS
+            Y DENTRO A CADA ARTÍCULO SU RESPECTIVA CLASE PARA LLAMARLAS.
+
+        -->
+
+        <!--1# ETIQUETA-->
+        <header id="header">
+            <nav id="navBar">
+                <div class="logoheader"><img src="images/LOGO.jpeg" alt="logo">
+                </div>
+                
+                <div>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="pages/menu.html">Menu</a></li>
+                    <li><a href="pages/ubicacion.html">Ubicacion</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                    <li><a href="pages/carrito.html">Carrito</a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <!--2# ETIQUETA-->
+        <main id="mainindex">
+            <section id="maingeneral">
+                        <article class="textomision">
+                            <h1>Mision</h1>
+                            <p>Nuestro propósito es servir con rapidez productos de alta calidad con un tamaño diferenciado y un sabor a la preferencia del consumidor, logrando la satisfacción total de nuestros clientes.</p>
+                        </article>
+                        <article class="textovision">
+                            <h1>Vision</h1>
+                            <p>Por otro lado, trabajamos incansanblemente para convertirnos en la   cadena argentina de comida rápida más grande del país obteniendo una significativa participación del mercado.</p>
+                        </article>
+
+            </section>
+        </main>
+
+
+
+        <!--3# ETIQUETA-->
+        <footer id="footer">
+            <section id="cajasfooter">
+            <article class="footer_logo">
+                <a href=""><img src="images/LOGO.jpeg" alt=""></a>
+            </article>  
+
+            <article class="footer__Redes">
+                        <a href="https://web.whatsapp.com/"><img src="icons/Redes/Whatsapp.png" alt="Whattsapp"></a>
+
+                        <a href="https://www.facebook.com/?locale=es_LA"><img src="icons/Redes/Facebook.png" alt="Facebook"></a>
+
+                        <a href="https://twitter.com/?lang=es"><img src="icons/Redes/Twitter.png" alt="Twitter"></a>
+
+                        <a href="https://www.instagram.com/"><img src="icons/Redes/Instagram.png" alt="Instagram"></a>
+                    
+            </article>
+        </section>  
+        </footer>
+
+
+
+        
+</body>
+</html>
