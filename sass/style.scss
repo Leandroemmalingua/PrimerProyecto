@@ -1,0 +1,312 @@
+
+/*RESETS CSS --- ES PARA LLAMAR A TODO EL DOCUMENTO EN GENERAL*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+/*ESTILO DEL BODY*/
+
+
+/*SECCION MAIN*/
+
+main {
+    min-height: 100vh;
+    background-color: darkred;
+}
+
+
+.textomision, .textovision {
+    height: 500px;
+    width: 500px;
+    font-size: 40px;
+    overflow: auto;
+    text-align: center;
+    margin: 50px;
+    position: relative;
+}
+
+
+#maingeneral {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* FORMULARIO*/
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*SECCION ARTICULOS*/
+
+#articulos .articuloscontenedor .estiloart img {
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    overflow: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/*SECCION HEADER */
+
+.nombreempreza {
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 50px;
+}
+
+header{
+    height: 120px;
+    width: 100%;
+    background-color: rgb(0, 0, 0) ;
+    display: flex;
+
+}
+
+
+header nav ul li {
+    display: inline-block;
+    font-style: none;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 30px;
+    transition: 1s;
+}
+
+
+
+.logoheader img {
+    height: 100%;
+    width: 150px;
+    margin-left: 10px;
+}
+
+#navBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navBar div ul {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#navBar ul a:hover {
+    font-size: 40px;
+    transition: 1s;
+}
+
+
+/*PIE DE PAGINA*/
+footer {
+    background-color: rgb(0, 0, 0);
+    height: 120px;
+}
+
+#cajasfooter {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_logo img {
+    display: flex;
+    width: 150px;
+    height: 100%;
+    margin-left: 10px;
+}
+
+/*ARTICULO CONTENEDOR DE REDES*/
+
+.footer__Redes img {
+    height: 40px;
+    width: 40px;
+    margin: 20px 20px 0 10px;
+}
+
+
+/*PAGINA MENU*/
+#botones img {
+    height: 80px;
+    width: 80px;
+    margin: 15px;
+    background-size: cover;
+    display: flex;
+    background-size: cover;
+}
+
+.botonesmenu {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    border: 2px solid;
+    border-radius: 60px;
+    background-color: rgba(220, 20, 60, 0.37);
+}
+
+#botones {
+    display: flex;
+    justify-content: center;
+}
+
+#pruebamenu {
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: repeat(3, 260px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.grillamenu1{
+    background-color: rgba(220, 20, 60, 0.37);
+}
+.grillamenu2{
+    background-color: rgba(220, 20, 60, 0.37);
+}
+.grillamenu3{
+    background-color: rgba(220, 20, 60, 0.37);
+}
+.grillamenu4{
+    background-color: rgba(220, 20, 60, 0.37);
+}
+.grillamenu5{
+    background-color: rgba(220, 20, 60, 0.37);
+}
+.grillamenu6{
+    background-color: rgba(220, 20, 60, 0.37);
+}
+.grillamenu7{
+    background-color: rgba(220, 20, 60, 0.37);
+}
+.grillamenu8{
+    background-color: rgba(220, 20, 60, 0.37);
+}
+.grillamenu9{
+    background-color: rgba(220, 20, 60, 0.37);
+}
+.grillamenu10{
+    background-color: rgba(220, 20, 60, 0.37);
+}
+
+
+
+
+/*PAGINA UBICACION*/
+
+#direubicaciones {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tituloubicacion {
+    margin-top: 50px;
+    height: 350px;
+    width: 350px;
+}
+
+.mapaubicacion {
+    margin-top: 50px;
+}
+
+.tituloubicacion h1 {
+    font-size: 50px;
+}
+
+.tituloubicacion p {
+    font-size: 30px;
+}
+
+
+/*PAGINA CARRITO*/
+
+#titulopedido {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.botonenviar {
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    height: 60px;
+}
+
+#grillacarrito {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 200px 120px 60px 120px 120px 90px 90px;
+    grid-template-rows: repeat(12, 35px);
+    grid-template-areas:
+    "comida medallones cantidad jamonyqueso lechugaytomate cheddar panceta"
+    "megaburguer cant1 cant2 siono1 siono2 siono3 siono4"
+    "crispychikenxl cant3 cant4 siono5 siono6 siono7 siono8"
+    "bombacrispychiken cant5 cant6 siono9 siono10 siono11 siono12"
+    "patitas cant7 cant8 siono13 siono14 siono15 siono16"
+    "alitas cant9 cant10 siono17 siono18 siono19 siono20"
+    "muslos cant11 cant12 siono21 siono22 siono23 siono24"
+    "nuggets cant13 cant14 siono25 siono26 siono27 siono28"
+    "papasfristasjyq cant15 cant16 siono29 siono30 siono31 siono32"
+    "papasbarbas cant17 cant18 siono33 siono34 siono35 siono36"
+    "papascochinas cant19 cant20 siono37 siono38 siono39 siono40"
+    "aroscebolla cant21 cant22 siono41 siono42 siono43 siono44"
+    ;
+}
+
+.comida,
+.medallones,
+.cantidad,
+.jamonyqueso,
+.lechugaytomate,
+.cheddar,
+.panceta {
+    text-align: center;
+}
+
+.Bordetabla {
+    border: 2px solid; 
+}
+
+
+
+
+
+
+
+
+/*MODO RESPONSIVE-----MEDIA QUERIES*/
+
+
+
+
+
+
+
+
+
