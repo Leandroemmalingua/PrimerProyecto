@@ -10,18 +10,41 @@
 /*ESTILO DEL BODY*/
 /*SECCION MAIN*/
 main {
+  padding-top: 100px;
+  padding-bottom: 50px;
   min-height: 100vh;
-  background-color: darkred;
+  background-color: black;
+}
+
+#mainindex {
+  background-color: black;
+}
+
+#maingeneral h1 {
+  text-align: center;
+  color: black;
+  font-size: 80px;
+}
+
+#maingeneral p {
+  font-size: 30px;
+}
+
+#maingeneral {
+  display: flex;
+  flex-direction: column;
 }
 
 .textomision, .textovision {
-  height: 500px;
-  width: 500px;
+  height: 350px;
+  width: 1200px;
   font-size: 40px;
   overflow: auto;
-  text-align: center;
-  margin: 50px;
+  text-align: left;
+  margin: 80px;
   position: relative;
+  background-color: cyan;
+  text-align: center;
 }
 
 #maingeneral {
@@ -54,10 +77,12 @@ main {
 }
 
 header {
-  height: 120px;
+  height: 150px;
   width: 100%;
   background-color: rgb(0, 0, 0);
   display: flex;
+  position: fixed;
+  z-index: 1000;
 }
 
 header nav ul li {
@@ -73,10 +98,26 @@ header nav ul li a {
   transition: 1s;
 }
 
+header nav ul li:hover {
+  background-color: cyan;
+}
+
+header nav ul li a:hover {
+  color: black;
+}
+
+header nav ul li:active {
+  background-color: cyan;
+}
+
 .logoheader img {
   height: 100%;
-  width: 150px;
+  width: 600px;
   margin-left: 10px;
+}
+
+#videoindex video {
+  margin-top: 50px;
 }
 
 #navBar {
@@ -98,14 +139,14 @@ header nav ul li a {
 
 /*PIE DE PAGINA*/
 footer {
-  background-color: rgb(0, 0, 0);
-  height: 120px;
+  background-color: rgba(0, 0, 0, 0.884);
+  height: 70px;
 }
 
 #cajasfooter {
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer_logo img {
@@ -139,7 +180,7 @@ footer {
   margin-top: 100px;
   border: 2px solid;
   border-radius: 60px;
-  background-color: rgba(220, 20, 60, 0.37);
+  background-color: cyan;
 }
 
 #botones {
@@ -158,49 +199,50 @@ footer {
 }
 
 .grillamenu1 {
-  background-color: rgba(220, 20, 60, 0.37);
+  background-color: cyan;
 }
 
 .grillamenu2 {
-  background-color: rgba(220, 20, 60, 0.37);
+  background-color: cyan;
 }
 
 .grillamenu3 {
-  background-color: rgba(220, 20, 60, 0.37);
+  background-color: cyan;
 }
 
 .grillamenu4 {
-  background-color: rgba(220, 20, 60, 0.37);
+  background-color: cyan;
 }
 
 .grillamenu5 {
-  background-color: rgba(220, 20, 60, 0.37);
+  background-color: cyan;
 }
 
 .grillamenu6 {
-  background-color: rgba(220, 20, 60, 0.37);
+  background-color: cyan;
 }
 
 .grillamenu7 {
-  background-color: rgba(220, 20, 60, 0.37);
+  background-color: cyan;
 }
 
 .grillamenu8 {
-  background-color: rgba(220, 20, 60, 0.37);
+  background-color: cyan;
 }
 
 .grillamenu9 {
-  background-color: rgba(220, 20, 60, 0.37);
+  background-color: cyan;
 }
 
 .grillamenu10 {
-  background-color: rgba(220, 20, 60, 0.37);
+  background-color: cyan;
 }
 
 /*PAGINA UBICACION*/
 #direubicaciones {
   display: flex;
   justify-content: space-evenly;
+  background-color: cyan;
 }
 
 .tituloubicacion {
@@ -219,6 +261,7 @@ footer {
 
 .tituloubicacion p {
   font-size: 30px;
+  padding-top: 30px;
 }
 
 /*PAGINA CARRITO*/
