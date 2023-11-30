@@ -19,7 +19,7 @@
                     <li><a href="../pages/menu.html">Menu</a></li>
                     <li><a href="../pages/ubicacion.html">Ubicacion</a></li>
                     <li><a href="#">Contacto</a></li>
-                    <li><a href="../pages/carrito.html">Carrito</a></li>
+                    <li><a href="../pages/carrito.html">Pedido</a></li>
                 </ul>
                 </div>
             </nav>
@@ -30,22 +30,39 @@
 
         <!--2# ETIQUETA-->
         <main>
-            <section id="formulario">
-                    <form action="#">
-                        <input type="text" placeholder="Nombre y Apellido">
-                    </form>
-                    <form action="#">
-                        <input type="text" placeholder="Correo Electronico">
-                    </form>
-                    <form action="#">
-                        <input type="text" placeholder="Telefono (Cod Area)+(Num sin 0 y 15)">
-                    </form>
-                    <form action="#">
-                        <input type="text" placeholder="Asunto">
-                    </form>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <input type="submit">
-            </section>
+        <div class="contact_form">
+            <div class="formulario">			
+                <h1>CONTACTO</h1>
+                <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+                <form action="#">				
+                <p>
+                <label for="nombre" class="colocar_nombre">Nombre
+                </label>
+                <input type="text" name="introducir_nombre" id="nombre"  placeholder="Escribe tu nombre">
+                </p>
+                <p>
+                    <label for="email" class="colocar_email">Email
+                    </label>
+                    <input type="email" name="introducir_email" id="email" placeholder="Escribe tu Email">
+                </p>
+                <p>
+                <label for="telefone" class="colocar_telefono">Teléfono
+                </label>
+                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>		
+                <p>
+                <label for="asunto" class="colocar_asunto">Asunto
+                </label>
+                <input type="text" name="introducir_asunto" id="assunto" placeholder="Escribe un asunto">
+                </p>		
+                <p>
+                <label for="mensaje" class="colocar_mensaje">Mensaje
+                </label>                     
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"  placeholder="Deja aquí tu comentario..."></textarea> 
+                </p>	  								
+                <a href=""><button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button></a>
+                </div>	
+            </div>
         </main>
 
 
@@ -65,5 +82,6 @@
             </article>
         </section>  
         </footer>
+
 </body>
 </html>
