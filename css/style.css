@@ -20,17 +20,18 @@ main {
   background-color: black;
 }
 
-#maingeneral h1 {
+#maingeneral h1, h2 {
   text-align: center;
   color: #ab4493;
   font-size: 80px;
 }
 
 #maingeneral p {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #maingeneral {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -43,13 +44,28 @@ main {
   text-align: left;
   margin: 80px;
   position: relative;
-  background-color: cyan;
   text-align: center;
+}
+
+.textomision:hover {
+  background-color: cyan;
+}
+
+.textovision:hover {
+  background-color: cyan;
 }
 
 #maingeneral {
   display: flex;
   justify-content: center;
+}
+
+.carousel-inner {
+  height: 600px;
+}
+
+.carousel-inner img {
+  background-size: cover;
 }
 
 /* FORMULARIO*/
@@ -184,6 +200,7 @@ header nav ul li a {
   color: rgba(255, 255, 255, 0.63);
   font-size: 25px;
   transition: 1s;
+  text-decoration: none;
 }
 
 header nav ul li:hover {
