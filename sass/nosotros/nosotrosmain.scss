@@ -1,0 +1,80 @@
+/*SECCION MAIN INDEX*/
+
+main {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    background-color: black;
+}
+
+#mainindex {
+    background-color: black;
+}
+
+#maingeneral h1, h2{
+    text-align: center;
+    color: #ab4493;
+    font-size: 80px;
+}
+
+#maingeneral p {
+    font-size: 25px;
+}
+
+#maingeneral {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#maingeneral p {
+    color: #ac699c;
+}
+
+.textomision, .textovision {
+    height: 400px;
+    width: 1200px;
+    font-size: 40px;
+    overflow: auto;
+    text-align: center;
+    margin: 80px;
+    justify-content: center;
+}
+
+.textovision {
+    height: 300px;
+}
+
+.textomision:hover {
+    background-color: cyan;
+}
+
+.textovision:hover {
+    background-color: cyan;
+}
+
+#maingeneral {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner{
+    height: 600px;
+    width: 100%;
+}
+
+.carousel-inner img {
+    background-size: cover;
+    height: 600px;
+}
+
+
+#articulos .articuloscontenedor .estiloart img {
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    overflow: auto;
+    padding: 10px;
+    margin: 10px;
+}
+

@@ -1,0 +1,44 @@
+
+
+
+/*PAGINA UBICACION*/
+
+#ubicaciones {
+    display: grid;
+    padding-top: 100px;
+    justify-content: center;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 600px 600px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: 
+    "grillaubicaciones1 grillaubicaciones2"
+    "grillaubicaciones3 grillaubicaciones4";
+}
+
+.grillaubicaciones1,
+.grillaubicaciones2,
+.grillaubicaciones3,
+.grillaubicaciones4 {
+    background-color: cyan;
+    text-align: center;
+}
+
+#ubicaciones h1, h2, h3, h4 {
+    font-size: 50px;
+    color: #ab4493;
+    padding-bottom: 15px;
+}
+
+#ubicaciones p {
+    font-size: 30px;
+}
+
+.direubi {
+    width: 500px;
+    height: 450px;
+    padding: 20px;
+}
+
+
+

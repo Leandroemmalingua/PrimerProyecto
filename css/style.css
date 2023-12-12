@@ -1,176 +1,28 @@
-/*RESETS CSS --- ES PARA LLAMAR A TODO EL DOCUMENTO EN GENERAL*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
+@charset "UTF-8";
+/*PIE DE PAGINA*/
+footer {
+  background-color: rgba(0, 0, 0, 0.884);
+  height: 70px;
 }
 
-/*ESTILO DEL BODY*/
-/*SECCION MAIN*/
-main {
-  padding-top: 100px;
-  padding-bottom: 50px;
-  min-height: 100vh;
-  background-color: black;
-}
-
-#mainindex {
-  background-color: black;
-}
-
-#maingeneral h1, h2 {
-  text-align: center;
-  color: #ab4493;
-  font-size: 80px;
-}
-
-#maingeneral p {
-  font-size: 25px;
-}
-
-#maingeneral {
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-
-.textomision, .textovision {
-  height: 400px;
-  width: 1150px;
-  font-size: 40px;
-  overflow: auto;
-  text-align: center;
-  margin: 80px;
-  justify-content: center;
-}
-
-.textomision:hover {
-  background-color: cyan;
-}
-
-.textovision:hover {
-  background-color: cyan;
-}
-
-#maingeneral {
+#cajasfooter {
+  height: 100%;
   display: flex;
   justify-content: center;
 }
 
-.carousel-inner {
-  height: 600px;
+.footer_logo img {
+  display: flex;
+  width: 150px;
+  height: 100%;
+  margin-left: 10px;
 }
 
-.carousel-inner img {
-  background-size: cover;
-}
-
-/* FORMULARIO*/
-.contact_form {
-  width: 460px;
-  height: auto;
-  margin: 80px auto;
-  border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  background-color: #fbfbfb;
-  padding-left: 30px;
-}
-
-input {
-  background-color: #fbfbfb;
-  width: 408px;
+/*ARTICULO CONTENEDOR DE REDES*/
+.footer__Redes img {
   height: 40px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #ab4493;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-}
-
-textarea {
-  background-color: #fbfbfb;
-  width: 405px;
-  height: 150px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #ab4493;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
-}
-
-label {
-  display: block;
-  float: center;
-}
-
-button {
-  height: 45px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  background-color: #ab4493;
-  border-color: #ab4493;
-  border-style: solid;
-  border-radius: 10px;
-  width: 420px;
-  cursor: pointer;
-}
-
-button p {
-  color: #fff;
-}
-
-.aviso {
-  font-size: 13px;
-  color: #0e0e0e;
-}
-
-h1 {
-  font-size: 39px;
-  text-align: letf;
-  padding-bottom: 20px;
-  color: #ab4493;
-}
-
-h3 {
-  font-size: 16px;
-  padding-bottom: 30px;
-  color: #0e0e0e;
-}
-
-p {
-  font-size: 14px;
-  color: #0e0e0e;
-}
-
-.formulario input:focus {
-  outline: 0;
-  border: 1px solid #97d848;
-}
-
-.formulario textarea:focus {
-  outline: 0;
-  border: 1px solid #97d848;
-}
-
-/*SECCION ARTICULOS*/
-#articulos .articuloscontenedor .estiloart img {
-  width: 300px;
-  height: 300px;
-  background-color: aquamarine;
-  overflow: auto;
-  padding: 10px;
-  margin: 10px;
+  width: 40px;
+  margin: 20px 20px 0 10px;
 }
 
 /*SECCION HEADER */
@@ -241,32 +93,249 @@ header nav ul li:active {
   transition: 1s;
 }
 
-/*PIE DE PAGINA*/
-footer {
-  background-color: rgba(0, 0, 0, 0.884);
-  height: 70px;
+@media (max-width: 1170px) {
+  header {
+    position: fixed;
+    height: fit-content;
+  }
+  .logoheader img {
+    width: 300px;
+  }
+  ul {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    position: fixed;
+    height: fit-content;
+  }
+  .logoheader img {
+    width: 180px;
+  }
+}
+@media (max-width: 465px) {
+  header {
+    position: fixed;
+    height: fit-content;
+  }
+  .logoheader img {
+    width: 150px;
+  }
+  header nav ul li {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .contact_form {
+    width: 300px;
+  }
+  input, textarea, button {
+    width: 250px;
+  }
+}
+@media (max-width: 365px) {
+  header {
+    position: fixed;
+    height: fit-content;
+  }
+  header nav ul li a {
+    font-size: 15px;
+  }
+  .logoheader img {
+    width: 120px;
+  }
+  .contact_form {
+    width: 250px;
+  }
+  input, textarea, button {
+    width: 200px;
+  }
+}
+/*RESETS CSS --- ES PARA LLAMAR A TODO EL DOCUMENTO EN GENERAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
 
-#cajasfooter {
-  height: 100%;
+/*SECCION MAIN INDEX*/
+main {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  background-color: black;
+}
+
+#mainindex {
+  background-color: black;
+}
+
+#maingeneral h1, h2 {
+  text-align: center;
+  color: #ab4493;
+  font-size: 80px;
+}
+
+#maingeneral p {
+  font-size: 25px;
+}
+
+#maingeneral {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#maingeneral p {
+  color: #ac699c;
+}
+
+.textomision, .textovision {
+  height: 400px;
+  width: 1200px;
+  font-size: 40px;
+  overflow: auto;
+  text-align: center;
+  margin: 80px;
+  justify-content: center;
+}
+
+.textovision {
+  height: 300px;
+}
+
+.textomision:hover {
+  background-color: cyan;
+}
+
+.textovision:hover {
+  background-color: cyan;
+}
+
+#maingeneral {
   display: flex;
   justify-content: center;
 }
 
-.footer_logo img {
-  display: flex;
-  width: 150px;
-  height: 100%;
-  margin-left: 10px;
+.carousel-inner {
+  height: 600px;
+  width: 100%;
 }
 
-/*ARTICULO CONTENEDOR DE REDES*/
-.footer__Redes img {
+.carousel-inner img {
+  background-size: cover;
+  height: 600px;
+}
+
+#articulos .articuloscontenedor .estiloart img {
+  width: 300px;
+  height: 300px;
+  background-color: aquamarine;
+  overflow: auto;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* PAGINA CONTACTO*/
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
   height: 40px;
-  width: 40px;
-  margin: 20px 20px 0 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
 }
 
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ab4493;
+  border-color: #ab4493;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: #ab4493;
+}
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+@media (max-width: 720px) {
+  .contact_form {
+    width: 350px;
+  }
+  input, textarea, button {
+    width: 300px;
+  }
+}
 /*PAGINA MENU*/
 #mainmenu {
   background-color: cyan;
@@ -348,6 +417,7 @@ footer {
 
 .foto1menu {
   position: absolute;
+  height: 180px;
 }
 
 .foto2menu {
@@ -356,6 +426,8 @@ footer {
   padding-left: 60px;
   margin-top: 80px;
   margin-left: 20px;
+  height: 180px;
+  width: 200px;
 }
 
 .foto2menu1 {
@@ -363,19 +435,53 @@ footer {
   padding-top: 30px;
   margin-top: 35px;
   margin-left: 50px;
+  height: 220px;
+  width: 150px;
 }
 
 .foto2menu2, .foto2menu3 {
   margin-top: 70px;
   padding-top: 50px;
+  height: 180px;
+  width: 230px;
 }
 
 .foto2menu4 {
   margin-top: 100px;
   padding-top: 30px;
   margin-left: 50px;
+  height: 160px;
+  width: 170px;
 }
 
+@media (max-width: 1000px) {
+  #pruebamenu {
+    grid-template-columns: repeat(2, 220px);
+    grid-template-rows: repeat(5, 260px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 500px) {
+  #pruebamenu {
+    grid-template-columns: repeat(1, 220px);
+    grid-template-rows: repeat(5, 260px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-top: 30px;
+  }
+  #botones {
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+  }
+}
+@media (max-width: 368px) {
+  #botones {
+    margin-top: 5px;
+  }
+}
 /*PAGINA UBICACION*/
 #ubicaciones {
   display: grid;
@@ -396,8 +502,10 @@ footer {
   text-align: center;
 }
 
-#ubicaciones h1 {
+#ubicaciones h1, h2, h3, h4 {
   font-size: 50px;
+  color: #ab4493;
+  padding-bottom: 15px;
 }
 
 #ubicaciones p {
@@ -410,116 +518,32 @@ footer {
   padding: 20px;
 }
 
-/*PAGINA CARRITO*/
-#titulopedido {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
+#botonpedidos ul li {
+  display: inline-block;
 }
 
-.botonenviar {
-  padding: 10px;
-  justify-content: center;
-  display: flex;
-  height: 60px;
+#botonpedidos {
+  padding-top: 100px;
+  padding-left: 50px;
 }
 
-#grillacarrito {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 200px 120px 60px 120px 120px 90px 90px;
-  grid-template-rows: repeat(12, 35px);
-  grid-template-areas: "comida medallones cantidad jamonyqueso lechugaytomate cheddar panceta" "megaburguer cant1 cant2 siono1 siono2 siono3 siono4" "crispychikenxl cant3 cant4 siono5 siono6 siono7 siono8" "bombacrispychiken cant5 cant6 siono9 siono10 siono11 siono12" "patitas cant7 cant8 siono13 siono14 siono15 siono16" "alitas cant9 cant10 siono17 siono18 siono19 siono20" "muslos cant11 cant12 siono21 siono22 siono23 siono24" "nuggets cant13 cant14 siono25 siono26 siono27 siono28" "papasfristasjyq cant15 cant16 siono29 siono30 siono31 siono32" "papasbarbas cant17 cant18 siono33 siono34 siono35 siono36" "papascochinas cant19 cant20 siono37 siono38 siono39 siono40" "aroscebolla cant21 cant22 siono41 siono42 siono43 siono44";
-}
-
-.comida,
-.medallones,
-.cantidad,
-.jamonyqueso,
-.lechugaytomate,
-.cheddar,
-.panceta {
-  text-align: center;
-}
-
-.Bordetabla {
+.elegircompañia {
   background-color: cyan;
-  border: 2px solid;
+  width: 800px;
 }
 
-/*MODO RESPONSIVE-----MEDIA QUERIES*/
-@media (max-width: 1170px) {
-  header nav ul li a {
-    font-size: 15px;
-  }
-  .logoheader img {
-    width: 300px;
-  }
+h1 {
+  font-size: 40px;
 }
-@media (max-width: 700px) {
-  .logoheader img {
-    width: 180px;
-  }
-  header nav ul li a {
-    font-size: 10px;
-  }
+
+h4 {
+  font-size: 25px;
 }
-@media (max-width: 720px) {
-  .contact_form {
-    width: 350px;
-  }
-  input, textarea, button {
-    width: 300px;
-  }
-}
-@media (max-width: 465px) {
-  .logoheader img {
-    width: 150px;
-  }
-  header nav ul li {
-    font-size: 10px;
-    margin-left: 5px;
-  }
-  .contact_form {
-    width: 300px;
-  }
-  input, textarea, button {
-    width: 250px;
-  }
-}
-@media (max-width: 365px) {
-  header nav ul li a {
-    font-size: 8px;
-  }
-  .logoheader img {
-    width: 120px;
-  }
-  .contact_form {
-    width: 250px;
-  }
-  input, textarea, button {
-    width: 200px;
-  }
-}
-@media (max-width: 1000px) {
-  #pruebamenu {
-    grid-template-columns: repeat(2, 220px);
-    grid-template-rows: repeat(5, 260px);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    margin-top: 30px;
-  }
-}
-@media (max-width: 500px) {
-  #pruebamenu {
-    grid-template-columns: repeat(1, 220px);
-    grid-template-rows: repeat(5, 260px);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    margin-top: 30px;
-  }
+
+.logopedidosya img {
+  height: 250px;
+  margin-bottom: 50px;
+  padding-left: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

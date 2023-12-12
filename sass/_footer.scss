@@ -1,0 +1,26 @@
+/*PIE DE PAGINA*/
+footer {
+    background-color: rgba(0, 0, 0, 0.884);
+    height: 70px;
+}
+
+#cajasfooter {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_logo img {
+    display: flex;
+    width: 150px;
+    height: 100%;
+    margin-left: 10px;
+}
+
+/*ARTICULO CONTENEDOR DE REDES*/
+
+.footer__Redes img {
+    height: 40px;
+    width: 40px;
+    margin: 20px 20px 0 10px;
+}
