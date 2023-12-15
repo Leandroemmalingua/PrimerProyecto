@@ -1,7 +1,8 @@
 /*PAGINA MENU*/
 
 #mainmenu {
-    background-color: cyan;
+    background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(121,9,103,1) 35%, rgba(0,208,38,0.7175245098039216) 100%);
 }
 
 
@@ -21,6 +22,10 @@
     margin-top: 100px;
     border: 2px solid;
     border-radius: 60px;
+    background-color: rgb(17, 143, 143);
+}
+
+.botonesmenu:active {
     background-color: cyan;
 }
 
@@ -40,34 +45,76 @@
 }
 
 .grillamenu1{
-    background-color: black;
+    background-color: rgb(17, 143, 143);
+    border-radius: 10px;
 }
 .grillamenu2{
-    background-color: black;
+    background-color: rgb(17, 143, 143);    border-radius: 10px;
 }
 .grillamenu3{
-    background-color: black;
+    background-color: rgb(17, 143, 143);    border-radius: 10px;
 }
 .grillamenu4{
-    background-color: black;
+    background-color: rgb(17, 143, 143);    border-radius: 10px;
 }
 .grillamenu5{
-    background-color: black;
+    background-color: rgb(17, 143, 143);    border-radius: 10px;
 }
 .grillamenu6{
-    background-color: black;
+    background-color: rgb(17, 143, 143);    border-radius: 10px;
 }
 .grillamenu7{
-    background-color: black;
+    background-color: rgb(17, 143, 143);    border-radius: 10px;
 }
 .grillamenu8{
-    background-color: black;
+    background-color: rgb(17, 143, 143);    border-radius: 10px;
 }
 .grillamenu9{
-    background-color: black;
+    background-color: rgb(17, 143, 143);    border-radius: 10px;
 }
 .grillamenu10{
-    background-color: black;
+    background-color: rgb(17, 143, 143);    border-radius: 10px;
+}
+
+.grillamenu1:active {
+    background-color: rgba(0, 255, 255, 0.774);
+    
+}
+
+.grillamenu2:active {
+    background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu3:active {
+    background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu4:active {
+    background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu5:active {
+    background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu6:active {
+    background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu7:active {
+    background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu8:active {
+    background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu9:active {
+    background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu10:active {
+    background-color: rgba(0, 255, 255, 0.774);
 }
 
 

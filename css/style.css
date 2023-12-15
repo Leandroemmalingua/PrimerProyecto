@@ -44,17 +44,18 @@ header nav ul li {
   font-style: none;
   font-size: 25px;
   margin-left: 20px;
+  border-radius: 10px;
 }
 
 header nav ul li a {
   color: rgba(255, 255, 255, 0.63);
-  font-size: 25px;
+  font-size: 20px;
   transition: 1s;
   text-decoration: none;
 }
 
 header nav ul li:hover {
-  background-color: cyan;
+  background-color: rgb(17, 143, 143);
 }
 
 header nav ul li a:hover {
@@ -88,7 +89,7 @@ header nav ul li:active {
 }
 
 #navBar ul a:hover {
-  font-size: 40px;
+  font-size: 30px;
   transition: 1s;
 }
 
@@ -174,8 +175,8 @@ main {
 
 #maingeneral h1, h2 {
   text-align: center;
-  color: #ab4493;
   font-size: 80px;
+  color: black;
 }
 
 #maingeneral p {
@@ -189,7 +190,7 @@ main {
 }
 
 #maingeneral p {
-  color: #ac699c;
+  color: rgb(0, 0, 0);
 }
 
 .textomision, .textovision {
@@ -207,16 +208,17 @@ main {
 }
 
 .textovision h2 {
+  color: black;
   font-size: 80px;
-  text-align: center;
+  text-align: center !important;
 }
 
 .textomision:hover {
-  background-color: cyan;
+  background-color: rgb(17, 143, 143);
 }
 
 .textovision:hover {
-  background-color: cyan;
+  background-color: rgb(17, 143, 143);
 }
 
 #maingeneral {
@@ -291,6 +293,11 @@ main {
   }
 }
 /* PAGINA CONTACTO*/
+main {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(180deg, rgb(2, 0, 36) 0%, rgb(121, 9, 103) 35%, rgba(0, 208, 38, 0.7175245098) 100%);
+}
+
 .contact_form {
   width: 460px;
   height: auto;
@@ -317,6 +324,7 @@ input {
 
 textarea {
   background-color: #fbfbfb;
+  resize: none;
   width: 405px;
   height: 150px;
   border-radius: 5px;
@@ -390,7 +398,8 @@ p {
 }
 /*PAGINA MENU*/
 #mainmenu {
-  background-color: cyan;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(180deg, rgb(2, 0, 36) 0%, rgb(121, 9, 103) 35%, rgba(0, 208, 38, 0.7175245098) 100%);
 }
 
 #botones img {
@@ -409,6 +418,10 @@ p {
   margin-top: 100px;
   border: 2px solid;
   border-radius: 60px;
+  background-color: rgb(17, 143, 143);
+}
+
+.botonesmenu:active {
   background-color: cyan;
 }
 
@@ -428,43 +441,93 @@ p {
 }
 
 .grillamenu1 {
-  background-color: black;
+  background-color: rgb(17, 143, 143);
+  border-radius: 10px;
 }
 
 .grillamenu2 {
-  background-color: black;
+  background-color: rgb(17, 143, 143);
+  border-radius: 10px;
 }
 
 .grillamenu3 {
-  background-color: black;
+  background-color: rgb(17, 143, 143);
+  border-radius: 10px;
 }
 
 .grillamenu4 {
-  background-color: black;
+  background-color: rgb(17, 143, 143);
+  border-radius: 10px;
 }
 
 .grillamenu5 {
-  background-color: black;
+  background-color: rgb(17, 143, 143);
+  border-radius: 10px;
 }
 
 .grillamenu6 {
-  background-color: black;
+  background-color: rgb(17, 143, 143);
+  border-radius: 10px;
 }
 
 .grillamenu7 {
-  background-color: black;
+  background-color: rgb(17, 143, 143);
+  border-radius: 10px;
 }
 
 .grillamenu8 {
-  background-color: black;
+  background-color: rgb(17, 143, 143);
+  border-radius: 10px;
 }
 
 .grillamenu9 {
-  background-color: black;
+  background-color: rgb(17, 143, 143);
+  border-radius: 10px;
 }
 
 .grillamenu10 {
-  background-color: black;
+  background-color: rgb(17, 143, 143);
+  border-radius: 10px;
+}
+
+.grillamenu1:active {
+  background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu2:active {
+  background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu3:active {
+  background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu4:active {
+  background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu5:active {
+  background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu6:active {
+  background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu7:active {
+  background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu8:active {
+  background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu9:active {
+  background-color: rgba(0, 255, 255, 0.774);
+}
+
+.grillamenu10:active {
+  background-color: rgba(0, 255, 255, 0.774);
 }
 
 .foto1menu {
@@ -550,12 +613,16 @@ p {
 .grillaubicaciones2,
 .grillaubicaciones3,
 .grillaubicaciones4 {
-  background-color: cyan;
-  text-align: center;
+  background-color: rgb(17, 143, 143);
+  text-align: center !important;
+}
+
+.grillaubicaciones2 h2 {
+  text-align: center !important;
 }
 
 #ubicaciones h1, h2, h3, h4 {
-  font-size: 50px;
+  font-size: 50px !important;
   color: #ab4493;
   padding-bottom: 15px;
 }
@@ -591,7 +658,7 @@ p {
 #botonpedidos {
   display: grid;
   padding-top: 100px;
-  padding-left: 100px;
+  justify-content: center;
   grid-template-columns: 400px 400px;
   grid-template-rows: 60px 60px 300px;
   gap: 0px 0px;
@@ -600,22 +667,22 @@ p {
 
 .elegircompania1 {
   grid-area: elegircompania1;
-  background-color: cyan;
+  background-color: rgb(17, 143, 143);
 }
 
 .elegircompania2 {
   grid-area: elegircompania2;
-  background-color: cyan;
+  background-color: rgb(17, 143, 143);
 }
 
 .elegircompania3 {
   grid-area: elegircompania3;
-  background-color: cyan;
+  background-color: rgb(17, 143, 143);
 }
 
 .elegircompania4 {
   grid-area: elegircompania4;
-  background-color: cyan;
+  background-color: rgb(17, 143, 143);
 }
 
 h1 {
@@ -624,7 +691,7 @@ h1 {
 
 h2 {
   font-size: 30px;
-  text-align: left;
+  text-align: left !important;
 }
 
 .elegircompania4 img {

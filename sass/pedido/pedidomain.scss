@@ -2,7 +2,7 @@
 #botonpedidos {
     display: grid; 
     padding-top: 100px;
-    padding-left: 100px;
+    justify-content: center;
     grid-template-columns: 400px 400px; 
     grid-template-rows: 60px 60px 300px; 
     gap: 0px 0px; 
@@ -12,10 +12,10 @@
     "elegircompania3 elegircompania4"; 
 }
 
-.elegircompania1 { grid-area: elegircompania1; background-color: cyan;}
-.elegircompania2 { grid-area: elegircompania2; background-color: cyan;}
-.elegircompania3 { grid-area: elegircompania3; background-color: cyan;}
-.elegircompania4 { grid-area: elegircompania4; background-color: cyan;}
+.elegircompania1 { grid-area: elegircompania1; background-color: rgb(17, 143, 143);}
+.elegircompania2 { grid-area: elegircompania2; background-color: rgb(17, 143, 143);}
+.elegircompania3 { grid-area: elegircompania3; background-color: rgb(17, 143, 143);}
+.elegircompania4 { grid-area: elegircompania4; background-color: rgb(17, 143, 143);}
 
 h1 {
     font-size: 40px;
@@ -23,7 +23,7 @@ h1 {
 
 h2 {
     font-size: 30px;
-    text-align: left;
+    text-align: left !important;
 }
 
 .elegircompania4 img {

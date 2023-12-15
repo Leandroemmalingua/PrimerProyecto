@@ -14,8 +14,8 @@ main {
 
 #maingeneral h1, h2{
     text-align: center;
-    color: #ab4493;
     font-size: 80px;
+    color: black;
 }
 
 #maingeneral p {
@@ -29,7 +29,7 @@ main {
 }
 
 #maingeneral p {
-    color: #ac699c;
+    color: rgb(0, 0, 0);
 }
 
 .textomision, .textovision {
@@ -47,16 +47,17 @@ main {
 }
 
 .textovision h2 {
+    color: black;
     font-size: 80px;
-    text-align: center;
+    text-align: center !important;
 }
 
 .textomision:hover {
-    background-color: cyan;
+    background-color: rgb(17, 143, 143);
 }
 
 .textovision:hover {
-    background-color: cyan;
+    background-color: rgb(17, 143, 143);
 }
 
 #maingeneral {

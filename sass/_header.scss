@@ -21,17 +21,18 @@ header nav ul li {
     font-style: none;
     font-size: 25px;
     margin-left: 20px;
+    border-radius: 10px;
 }
 
 header nav ul li a {
     color: rgba(255, 255, 255, 0.63);
-    font-size: 25px;
+    font-size: 20px;
     transition: 1s;
     text-decoration: none;
 }
 
 header nav ul li:hover {
-    background-color: cyan;
+    background-color: rgb(17, 143, 143);
 }
 
 header nav ul li a:hover {
@@ -66,7 +67,7 @@ header nav ul li:active {
 }
 
 #navBar ul a:hover {
-    font-size: 40px;
+    font-size: 30px;
     transition: 1s;
 }
 
