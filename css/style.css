@@ -31,7 +31,7 @@ footer {
 }
 
 header {
-  height: 150px;
+  height: 180px;
   width: 100%;
   background-color: rgb(0, 0, 0);
   display: flex;
@@ -68,7 +68,7 @@ header nav ul li:active {
 
 .logoheader img {
   height: 100%;
-  width: 600px;
+  width: 400px;
   margin-left: 10px;
 }
 
@@ -85,7 +85,7 @@ header nav ul li:active {
 #navBar div ul {
   height: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-end !important;
 }
 
 #navBar ul a:hover {
@@ -131,6 +131,9 @@ header nav ul li:active {
   }
   input, textarea, button {
     width: 250px;
+  }
+  .logoheader2 img {
+    width: 50px;
   }
 }
 @media (max-width: 365px) {
@@ -274,6 +277,9 @@ main {
 @media (max-width: 680px) {
   .textomision, .textovision {
     margin-left: 60px;
+  }
+  .logoheader2 img {
+    width: 150px;
   }
 }
 @media (max-width: 530px) {
@@ -589,7 +595,6 @@ p {
   #botones {
     flex-direction: column;
     width: 150px;
-    align-items: center;
   }
 }
 @media (max-width: 368px) {
