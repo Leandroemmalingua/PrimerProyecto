@@ -1,7 +1,7 @@
 /*PAGINA MENU*/
 
 #mainmenu {
-    background: rgb(2,0,36);
+    background: #020024;
 background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(121,9,103,1) 35%, rgba(0,208,38,0.7175245098039216) 100%);
 }
 
@@ -19,14 +19,14 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(121,9,103,1) 35%, rg
     margin-left: 30px;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 30px;
     border: 2px solid;
     border-radius: 60px;
     background-color: rgb(17, 143, 143);
 }
 
 .botonesmenu:active {
-    background-color: cyan;
+    background-color: #00ffff;
 }
 
 #botones {
@@ -178,12 +178,8 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(121,9,103,1) 35%, rg
     }
     #botones {
         flex-direction: column;
-        width: 150px;
+        justify-content: center !important;
     }
+
 }
 
-@media (max-width: 368px) {
-    #botones {
-        margin-top: 5px;
-    }
-}

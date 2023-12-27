@@ -1,21 +1,20 @@
 /*SECCION MAIN INDEX*/
 
 main {
-    padding-top: 100px;
     padding-bottom: 50px;
     min-height: 100vh;
-    background-color: black;
+    background-color: #000000;
     justify-content: center;
 }
 
 #mainindex {
-    background-color: black;
+    background-color: #000000;
 }
 
 #maingeneral h1, h2{
     text-align: center;
     font-size: 80px;
-    color: black;
+    color: #000000;
 }
 
 #maingeneral p {
@@ -29,25 +28,19 @@ main {
 }
 
 #maingeneral p {
-    color: rgb(0, 0, 0);
+    color: #000000;
 }
 
 .textomision, .textovision {
-    height: 400px;
-    width: 800px;
     font-size: 40px;
     overflow: auto;
     text-align: center;
-    margin: 80px;
-    margin-left: 280px;
-}
-
-.textovision {
-    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .textovision h2 {
-    color: black;
+    color: #000000;
     font-size: 80px;
     text-align: center !important;
 }
@@ -66,20 +59,24 @@ main {
 }
 
 .carousel-inner{
-    height: 600px;
+    height: 400px;
     width: 100%;
 }
 
 .carousel-inner img {
-    background-size: cover;
-    height: 600px;
+height: 400px;
+}
+
+.carruselindex {
+    display: flex;
+    justify-content: center;
 }
 
 
 #articulos .articuloscontenedor .estiloart img {
     width: 300px;
     height: 300px;
-    background-color: aquamarine;
+    background-color: #7fffd4;
     overflow: auto;
     padding: 10px;
     margin: 10px;
@@ -139,5 +136,27 @@ main {
 @media (max-width: 480px) {
     video {
         height: 400px;
+    }
+    #maingeneral h1 {
+        font-size: 30px;
+    }
+    #maingeneral p {
+        font-size: 10px;
+    }
+    .textomision, .textovision {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 260px;
+    }
+}
+
+@media (max-width: 320px) {
+    .textomision, .textovision {
+        width: 280px;
+        height: 300px;
+        margin-top: 0px;
+    }
+    #videoindex {
+        margin-top: 0px;
     }
 }

@@ -4,7 +4,7 @@ footer {
   height: 70px;
 }
 
-#cajasfooter {
+.cajasfooter {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -31,11 +31,11 @@ footer {
 }
 
 header {
-  height: 180px;
   width: 100%;
   background-color: rgb(0, 0, 0);
   display: flex;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 1000;
 }
 
@@ -59,17 +59,21 @@ header nav ul li:hover {
 }
 
 header nav ul li a:hover {
-  color: black;
+  color: #000000;
 }
 
 header nav ul li:active {
-  background-color: cyan;
+  background-color: #00ffff;
 }
 
-.logoheader img {
+.logoheader {
   height: 100%;
-  width: 400px;
+  width: 250px;
   margin-left: 10px;
+}
+
+.logoheader2 {
+  height: 120px;
 }
 
 #videoindex video {
@@ -85,7 +89,8 @@ header nav ul li:active {
 #navBar div ul {
   height: 100%;
   display: flex;
-  align-items: flex-end !important;
+  align-items: flex-end;
+  padding: 10px;
 }
 
 #navBar ul a:hover {
@@ -114,44 +119,22 @@ header nav ul li:active {
     width: 180px;
   }
 }
-@media (max-width: 465px) {
+@media (max-width: 520px) {
+  #navBar {
+    flex-direction: column;
+    align-items: center;
+  }
   header {
-    position: fixed;
-    height: fit-content;
-  }
-  .logoheader img {
-    width: 150px;
-  }
-  header nav ul li {
-    font-size: 10px;
-    margin-left: 5px;
-  }
-  .contact_form {
-    width: 300px;
-  }
-  input, textarea, button {
-    width: 250px;
-  }
-  .logoheader2 img {
-    width: 50px;
+    position: static;
+    align-items: left;
   }
 }
-@media (max-width: 365px) {
+@media (max-width: 465px) {
   header {
-    position: fixed;
-    height: fit-content;
+    position: static !important;
   }
-  header nav ul li a {
-    font-size: 15px;
-  }
-  .logoheader img {
-    width: 120px;
-  }
-  .contact_form {
-    width: 250px;
-  }
-  input, textarea, button {
-    width: 200px;
+  .logoheader2 {
+    display: none;
   }
 }
 /*RESETS CSS --- ES PARA LLAMAR A TODO EL DOCUMENTO EN GENERAL*/
@@ -165,21 +148,20 @@ header nav ul li:active {
 
 /*SECCION MAIN INDEX*/
 main {
-  padding-top: 100px;
   padding-bottom: 50px;
   min-height: 100vh;
-  background-color: black;
+  background-color: #000000;
   justify-content: center;
 }
 
 #mainindex {
-  background-color: black;
+  background-color: #000000;
 }
 
 #maingeneral h1, h2 {
   text-align: center;
   font-size: 80px;
-  color: black;
+  color: #000000;
 }
 
 #maingeneral p {
@@ -193,25 +175,19 @@ main {
 }
 
 #maingeneral p {
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 .textomision, .textovision {
-  height: 400px;
-  width: 800px;
   font-size: 40px;
   overflow: auto;
   text-align: center;
-  margin: 80px;
-  margin-left: 280px;
-}
-
-.textovision {
-  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .textovision h2 {
-  color: black;
+  color: #000000;
   font-size: 80px;
   text-align: center !important;
 }
@@ -230,19 +206,23 @@ main {
 }
 
 .carousel-inner {
-  height: 600px;
+  height: 400px;
   width: 100%;
 }
 
 .carousel-inner img {
-  background-size: cover;
-  height: 600px;
+  height: 400px;
+}
+
+.carruselindex {
+  display: flex;
+  justify-content: center;
 }
 
 #articulos .articuloscontenedor .estiloart img {
   width: 300px;
   height: 300px;
-  background-color: aquamarine;
+  background-color: #7fffd4;
   overflow: auto;
   padding: 10px;
   margin: 10px;
@@ -297,6 +277,27 @@ main {
   video {
     height: 400px;
   }
+  #maingeneral h1 {
+    font-size: 30px;
+  }
+  #maingeneral p {
+    font-size: 10px;
+  }
+  .textomision, .textovision {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 260px;
+  }
+}
+@media (max-width: 320px) {
+  .textomision, .textovision {
+    width: 280px;
+    height: 300px;
+    margin-top: 0px;
+  }
+  #videoindex {
+    margin-top: 0px;
+  }
 }
 /* PAGINA CONTACTO*/
 main {
@@ -307,9 +308,9 @@ main {
 .contact_form {
   width: 460px;
   height: auto;
-  margin: 80px auto;
+  margin: auto;
+  display: flex;
   border-radius: 10px;
-  padding-top: 30px;
   padding-bottom: 20px;
   background-color: #fbfbfb;
   padding-left: 30px;
@@ -402,9 +403,49 @@ p {
     width: 300px;
   }
 }
+@media (max-width: 465px) {
+  header {
+    position: fixed;
+    height: fit-content;
+  }
+  .logoheader img {
+    width: 150px;
+  }
+  header nav ul li {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .contact_form {
+    width: 300px;
+  }
+  input, textarea, button {
+    width: 250px;
+  }
+  .logoheader2 img {
+    width: 50px;
+  }
+}
+@media (max-width: 365px) {
+  header {
+    position: fixed;
+    height: fit-content;
+  }
+  header nav ul li a {
+    font-size: 15px;
+  }
+  .logoheader img {
+    width: 120px;
+  }
+  .contact_form {
+    width: 250px;
+  }
+  input, textarea, button {
+    width: 200px;
+  }
+}
 /*PAGINA MENU*/
 #mainmenu {
-  background: rgb(2, 0, 36);
+  background: #020024;
   background: linear-gradient(180deg, rgb(2, 0, 36) 0%, rgb(121, 9, 103) 35%, rgba(0, 208, 38, 0.7175245098) 100%);
 }
 
@@ -421,14 +462,14 @@ p {
   margin-left: 30px;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 30px;
   border: 2px solid;
   border-radius: 60px;
   background-color: rgb(17, 143, 143);
 }
 
 .botonesmenu:active {
-  background-color: cyan;
+  background-color: #00ffff;
 }
 
 #botones {
@@ -594,18 +635,13 @@ p {
   }
   #botones {
     flex-direction: column;
-    width: 150px;
-  }
-}
-@media (max-width: 368px) {
-  #botones {
-    margin-top: 5px;
+    justify-content: center !important;
   }
 }
 /*PAGINA UBICACION*/
 #ubicaciones {
   display: grid;
-  padding-top: 100px;
+  padding-top: 20px;
   justify-content: center;
   grid-template-columns: 600px 600px;
   grid-template-rows: 600px 600px;
@@ -662,7 +698,7 @@ p {
 }
 #botonpedidos {
   display: grid;
-  padding-top: 100px;
+  padding-top: 30px;
   justify-content: center;
   grid-template-columns: 400px 400px;
   grid-template-rows: 60px 60px 300px;
