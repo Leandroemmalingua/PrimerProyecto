@@ -80,7 +80,7 @@ header nav ul li:active {
 
 @media (max-width: 1170px) {
     header {
-        position: fixed;
+        position: sticky;
         height: fit-content;
     }
 
@@ -94,7 +94,7 @@ header nav ul li:active {
 
 @media (max-width: 700px) {
     header {
-        position: fixed;
+        position: sticky;
         height: fit-content;
     }
     .logoheader img {

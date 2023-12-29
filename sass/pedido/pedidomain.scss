@@ -53,15 +53,15 @@ h2 {
         "elegircompania3"
         "elegircompania4";
         }
-    h1 {
+    .elegircompania1 {
         font-size: 30px;
     }
-    h2 {
-        font-size: 20px;
+    .elegircompania2 h2 {
+        font-size: 18px !important;
     }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 520px) {
     #botonpedidos {
         padding-left: 20px;
         display: grid;
@@ -84,8 +84,7 @@ h2 {
         width: 100px;
         margin-left: 10px;
         margin-top: 10px;
-    
-    }
+        }
     
     .elegircompania3 img {
         height: 100px;

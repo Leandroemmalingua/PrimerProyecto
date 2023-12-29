@@ -73,3 +73,19 @@
         width: 350px;
     }
 }
+
+@media (max-width: 630px) {
+    #ubicaciones {
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(4, 600px);
+        grid-column-gap: 5px;
+        grid-template-areas: 
+        "grillaubicaciones1 "
+        "grillaubicaciones2"
+        "grillaubicaciones3"
+        "grillaubicaciones4"
+        }
+        .direubi {
+            width: 300px;
+        }
+}
